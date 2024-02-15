@@ -4,6 +4,7 @@ import Main from "./Layouts/Main";
 import Home from "./Components/Home/Home";
 import Products from "./Components/Products/Products";
 import Product from "./Components/Product/Product";
+import CategoryProducts from "./Components/CategoryProducts/CategoryProducts";
 
 const routes = createBrowserRouter([
   {
@@ -27,6 +28,15 @@ const routes = createBrowserRouter([
           );
         },
         element: <Product></Product>,
+      },
+      {
+        path: "/category/:categoryId",
+        loader: async ({ params }) => {
+          return fetch(
+            `https://fakestoreapi.com/products/category/${params.categoryId}`
+          );
+        },
+        element: <CategoryProducts />,
       },
     ],
   },

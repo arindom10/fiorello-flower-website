@@ -6,12 +6,12 @@ const Product = () => {
   console.log(productDetails);
   return (
     <div className="container mx-auto mt-10">
-      <div className="  bg-white shadow-md rounded-lg p-4 flex">
+      <div className="  bg-white shadow-md rounded-lg p-4 flex hover:scale-105">
         <div className="w-1/2 flex items-center justify-center">
           <img
             src={productDetails.image}
             alt={productDetails.name}
-            className="w-60 h-auto  "
+            className="w-60 h-auto hover:scale-105 "
           />
         </div>
         <div className="flex flex-col justify-between ml-4 w-1/2">
@@ -22,7 +22,7 @@ const Product = () => {
               Price: {productDetails.price}$
             </h2>
           </div>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 w-40">
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 w-40 ">
             Add to Cart
           </button>
         </div>
