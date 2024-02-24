@@ -22,9 +22,17 @@ const Product = () => {
               Price: {productDetails.price}$
             </h2>
           </div>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 w-40 ">
-            Add to Cart
-          </button>
+          <div className="flex items-center justify-between">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 w-40 ">
+              Add to Cart
+            </button>
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 w-40 ">
+              Add Wishlist
+            </button>
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 w-40 ">
+              Order Now
+            </button>
+          </div>
         </div>
       </div>
     </div>

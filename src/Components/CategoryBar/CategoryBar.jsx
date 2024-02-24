@@ -21,9 +21,13 @@ const CategoryBar = () => {
   }, []);
 
   return (
-    <div className="gap-72">
+    <div className="flex flex-col mt-10 ml-6 ">
       {categories.map((category, index) => (
-        <Link to={`/category/${category}`} key={index}>
+        <Link
+          className="text-blue-500"
+          to={`/category/${category}`}
+          key={index}
+        >
           {category}
         </Link>
       ))}

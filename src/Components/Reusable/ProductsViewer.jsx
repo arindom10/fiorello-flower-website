@@ -21,6 +21,9 @@ const ProductsViewer = ({ products }) => {
             <button className="bg-blue-500 text-white px-4 py-2  rounded-lg">
               Add to Cart
             </button>
+            <button className="bg-blue-500 text-white px-4 py-2 ml-10 rounded-lg">
+              Add to Wishlist
+            </button>
             <button className="bg-blue-500 text-white px-4 py-2 rounded-lg ml-9">
               <Link to={`/product/${product.id}`}>See Details</Link>
             </button>

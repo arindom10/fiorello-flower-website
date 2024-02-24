@@ -5,7 +5,7 @@ import CategoryBar from "../CategoryBar/CategoryBar";
 const Home = () => {
   return (
     <div>
-      <CategoryBar></CategoryBar>
+      {/* <CategoryBar></CategoryBar> */}
       <Products />
     </div>
   );
